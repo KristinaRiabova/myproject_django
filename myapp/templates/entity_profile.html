@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entity Profile</title>
+</head>
+<body>
+    <h1>Entity Profile</h1>
+    <p><strong>ID:</strong> {{ entity.id }}</p>
+    <p><strong>Name:</strong> {{ entity.name }}</p>
+    <p><strong>Description:</strong> {{ entity.description }}</p>
+    <a href="{% url 'image_view' %}">View Static Image</a>
+    <a href="{% url 'entity_list' %}">Back to Entity List</a>
+</body>
+</html>
